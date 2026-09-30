@@ -26,6 +26,7 @@ import {
 import { Button } from "@/components/ui/button";
 import logoAsset from "@/assets/remedall-pharmacy-logo.png.asset.json";
 import heroImage from "@/assets/pharmacy-care.jpg";
+import mark from "@/assets/Remedall_pharmacy_logo.png"
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -79,7 +80,7 @@ function SectionHeading({ eyebrow, title, text, centered = false }: { eyebrow: s
 function Logo({ inverse = false }: { inverse?: boolean }) {
   return <a href="#home" className="flex min-w-0 items-center gap-2.5" aria-label="Remedall Pharmacy home">
     <span className={`grid h-11 w-11 shrink-0 place-items-center overflow-hidden rounded-md ${inverse ? "bg-background" : "bg-secondary"}`}>
-      <img src={logoAsset.url} alt="" className="h-20 w-20 max-w-none object-contain" />
+      <img src={mark} alt="" className="h-20 w-20 max-w-none object-contain" />
     </span>
     <span className="min-w-0 leading-none">
       <span className={`block truncate font-display text-xl font-bold ${inverse ? "text-primary-foreground" : "text-navy"}`}>Remedall</span>
